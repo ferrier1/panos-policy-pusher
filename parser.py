@@ -3,7 +3,7 @@ import csv, re
 from itertools import chain
 
 @terraform_external_data
-def get_cool_data(query):
+def parse_csv(query):
     with open('example.csv', newline='', encoding='utf-8-sig') as csvfile:
         reader = csv.reader(csvfile, delimiter=',')
         ruleset = [rules for rules in reader]
@@ -30,4 +30,4 @@ def get_cool_data(query):
                 }
 
 if __name__ == '__main__':
-    get_cool_data()
+    parse_csv()
