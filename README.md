@@ -8,6 +8,6 @@ Populate CSV with rule parameters.
 
 Connect terraform provider to panos instance
 
-terraform init
-terraform plan
+terraform init\n
+terraform plan\n
 terraform apply
